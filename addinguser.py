@@ -25,7 +25,6 @@ def recreate_table():
     conn.commit()
     conn.close()
 
-# Call the function to recreate the table
 recreate_table()
 
 def validate_input(username, password):
@@ -38,7 +37,7 @@ def validate_input(username, password):
     return True
 
 def add_user_details():
-    # Prompt the user for input
+    
     username = input("Enter the username: ")
     password = input("Enter the password: ")
     privilege = input("Enter the privilege level (admin/user): ")
@@ -47,19 +46,19 @@ def add_user_details():
     if not validate_input(username, password):
         return False
 
-    # Connect to the database
+    
     conn = sqlite3.connect('userdetails.db')
     cursor = conn.cursor()
 
-    # Insert the user details into the database
+    
     cursor.execute("INSERT INTO details (NAME, PASSWORD, PRIVILEGE) VALUES (?, ?, ?)", (username, password, privilege))
     conn.commit()
 
-    # Close the database connection
+    
     conn.close()
 
     return True
 
-# Example usage
+
 if add_user_details():
     print("User details added successfully!")
