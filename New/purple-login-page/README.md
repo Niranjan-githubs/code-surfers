@@ -1,4 +1,18 @@
-# Login Page Design (HTML & CSS)
+index.html 
+style.css
+reset.css
+script.js 
+these files are belong to first login page #common page
 
-###### This login form is a mobile-friendly login form. You can even create a registration form and password reset form using this form. This form design will add elegance to your website :)
+
+
+welcome.html
+parentcss.css
+new-javascript-file 
+therse are belong to parent login page
+
+Dashboard.html
+dashcss.css
+app.js
+are belong to dashboard 
 
